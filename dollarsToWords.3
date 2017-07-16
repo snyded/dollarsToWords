@@ -1,0 +1,21 @@
+.TH DOLLARS_TO_WORDS 3
+.SH NAME
+dollarsToWords \- convert a numeric dollar amount to words
+.SH SYNOPSIS
+.B CHAR dollarsToWords(numericDollars)
+.br
+.B MONEY(8,2) numericDollars
+.SH DESCRIPTION
+The argument
+.B numericDollars
+is a numeric dollar amount.
+.br
+ 
+.br
+.I dollarsToWords
+will convert a MONEY(8,2) or DECIMAL(8,2) dollar amount to a
+sentence of words suitable for checks.  If the sentence is
+larger than 70 characters, the dollar amount is formatted and
+returned instead.
+.SH SUPPORT
+Send bug reports to Dave Snyder <dave@snide.com>
